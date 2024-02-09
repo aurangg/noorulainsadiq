@@ -27,7 +27,7 @@ export default function Home() {
             <div className="col-lg-12">
               <h2 className="other-heading">Select between two..</h2>
               <p className="main-text">
-                Upon clicking, you will get to see what's behind the box
+                Upon clicking, you will get to see whats behind the box
               </p>
             </div>
           </div>
