@@ -1,6 +1,8 @@
 "use client";
 import "bootstrap/dist/css/bootstrap.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import lottieConfetti from "../public/confetti.json";
+import Lottie from "lottie-react";
 
 export default function Home() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -16,7 +18,14 @@ export default function Home() {
 
   return (
     <main>
-      <section className="home-bg">
+      <section className="home-bg position-relative">
+        {isFlipped === true || isFlipped2 === true ? (
+          <div className="lottie-cover">
+            <Lottie animationData={lottieConfetti} loop={false} />
+          </div>
+        ) : (
+          <></>
+        )}
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

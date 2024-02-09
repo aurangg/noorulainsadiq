@@ -93,6 +93,12 @@ body {
 .flipped {
   transform: rotateY(180deg);
 }
+.lottie-cover {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
 @media (max-width: 450px) {
   .home-bg {
     padding-top: 70px;
