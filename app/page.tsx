@@ -40,8 +40,9 @@ export default function Home() {
           </div>
         </div> */}
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
+          <div className="row row-align">
+            <div className="col-lg-1"></div>
+            <div className="col-lg-6">
               {letterData.map((i, index) => (
                 <>
                   <div className="letter-box" key={index}>
@@ -58,6 +59,25 @@ export default function Home() {
                   )} */}
                 </>
               ))}
+            </div>
+            <div className="col-lg-4">
+              <iframe
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/track/78Sw5GDo6AlGwTwanjXbGh?utm_source=generator"
+                width="100%"
+                height="352"
+                allowFullScreen={false}
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div className="col-lg-1"></div>
+          </div>
+          <div className="row">
+            <div className="col-lg-10 offset-lg-1">
+              <p className="copyright">
+                Written for Chanda, by Chandu, with love.
+              </p>
             </div>
           </div>
         </div>
